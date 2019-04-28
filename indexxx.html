@@ -49,12 +49,13 @@ body {
     <p>(Fake Content) Our top-seller.</p>
     <!--add to cart button-->
     <p>
+<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
       <input type="hidden" name="cmd" value="_cart">
       <input type="hidden" name="business" value="orders@primafood.com.au">
       <input type="hidden" name="lc" value="AU">
       <input type="hidden" name="item_name" value="Garlic Bread">
       <input type="hidden" name="item_number" value="GB1">
-      <input type="hidden" name="amount" value="5.50">
+      <input type="hidden" name="amount" value="55.50">
       <input type="hidden" name="currency_code" value="AUD">
       <input type="hidden" name="button_subtype" value="products">
       <input type="hidden" name="no_note" value="1">
@@ -65,7 +66,7 @@ body {
       <input type="hidden" name="shopping_url" value="https://primacode.github.io/assessment3/indexxx.html">
       <input type="hidden" name="add" value="1">
       <input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHosted">
-    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+    
       <label for="quantity">Quantity:</label>
       <input type="text" name="quantity" size="5" value="1">
       <input type="submit" value="Add to cart" >
