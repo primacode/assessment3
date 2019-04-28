@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Primafood</title>
+<style type="text/css">
+<!--
+body {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	background:  #FFCCCC;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+}
+.oneColFixCtr #container {
+	width: 950px;  /* using 20px less than a full 970px width allows for browser chrome and avoids a horizontal scroll bar */
+	background: #FFFFFF;
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	border: 1px solid #000000;
+	text-align: left; /* this overrides the text-align: center on the body element. */
+}
+.oneColFixCtr #mainContent {
+	padding: 0 20px; /* remember that padding is the space inside the div box and margin is the space outside the div box */
+}
+-->
+</style>
+</head>
+<body class="oneColFixCtr">
+<div id="container">
+  <div id="mainContent">
+    <h1>Primafood </h1>
+    <!--View Cart Button..............float it right-->
+    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+      <input type="hidden" name="cmd" value="_cart">
+      <input type="hidden" name="business" value="orders@primafood.com.au">
+      <input type="hidden" name="display" value="1">
+      <input type="submit" value="View cart">
+      <input type="hidden" name="shopping_url" value="file:///C:/wamp/www/csstrial/xxxyyy.html">
+    </form>
+    <!--end view cart btn-->
+    <!--menu.......convert to links to take to new section of page-->
+    <h2>Starters Mains Desserts Beverages</h2>
+    <!--end menu-->
+    <h3>Starters</h3>
+    <h4>Garlic Bread $5.50</h4>
+    <p>(Fake Content) Our top-seller.</p>
+    <!--add to cart button-->
+    <p>
+      <input type="hidden" name="cmd" value="_cart">
+      <input type="hidden" name="business" value="orders@primafood.com.au">
+      <input type="hidden" name="lc" value="AU">
+      <input type="hidden" name="item_name" value="Garlic Bread">
+      <input type="hidden" name="item_number" value="GB1">
+      <input type="hidden" name="amount" value="5.50">
+      <input type="hidden" name="currency_code" value="AUD">
+      <input type="hidden" name="button_subtype" value="products">
+      <input type="hidden" name="no_note" value="1">
+      <input type="hidden" name="no_shipping" value="2">
+      <input type="hidden" name="rm" value="1">
+      <input type="hidden" name="return" value="http://primafood.walkaboutmultimedia.com">
+      <input type="hidden" name="cancel_return" value="http://primafood.walkaboutmultimedia.com">
+      <input type="hidden" name="shopping_url" value="file:///C:/wamp/www/csstrial/xxxyyy.html">
+      <input type="hidden" name="add" value="1">
+      <input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHosted">
+    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+      <label for="quantity">Quantity:</label>
+      <input type="text" name="quantity" size="5" value="1">
+      <input type="submit" value="Add to cart" >
+    </form>
+    </p>
+    <!---->
+    <!-- end #mainContent -->
+  </div>
+  <!-- end #container -->
+</div>
+</body>
+</html>
