@@ -1,15 +1,52 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Primafood</title>
+<title>Primafood: International Cuisine - Delivered</title>
 <style type="text/css">
-<!--
+img {
+	float: right;
+	background-color: #99CC66;
+	padding: 10px;
+	height: 100px;
+	width: 133px;
+	margin: 20px;
+	border: 1px solid black;
+}
+p {
+	line-height:2.0;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:small;
+	border: 1px dashed green;
+	padding: 20px;
+	background-color: #FBFBFB;
+}
+input {
+	line-height:1.5;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:small;
+	display: inline;
+}
+form {
+	line-height: 1.5;
+	display: inline;
+	margin: 30px;
+}
+.thumbnail:hover {
+	position:relative;
+	top: 0px;
+	width: 400px;
+	height: 300px;
+	display: block;
+	z-index: 999;
+	float: right;
+	left: 0px;
+}
 body {
 	font: 100% Verdana, Arial, Helvetica, sans-serif;
-	background:  #FFCCCC;
+	background: #996666;
 	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
 	padding: 0;
 	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
@@ -21,41 +58,50 @@ body {
 	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
 	border: 1px solid #000000;
 	text-align: left; /* this overrides the text-align: center on the body element. */
+	float: none;
 }
 .oneColFixCtr #mainContent {
 	padding: 0 20px; /* remember that padding is the space inside the div box and margin is the space outside the div box */
 }
--->
 </style>
 </head>
 <body class="oneColFixCtr">
 <div id="container">
   <div id="mainContent">
-    <h1>Primafood </h1>
     <!--View Cart Button..............float it right-->
-    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
-      <input type="hidden" name="cmd" value="_cart">
+    <form target="_self" action="https://www.paypal.com/cgi-bin/webscr" method="post" style="float:right" >
+      <input type="hidden" name="cmd2" value="_cart">
       <input type="hidden" name="business" value="orders@primafood.com.au">
       <input type="hidden" name="display" value="1">
       <input type="submit" value="View cart">
-      <input type="hidden" name="shopping_url" value="https://primacode.github.io/assessment3/indexxx.html">
     </form>
     <!--end view cart btn-->
+    <h1>Primafood: Cuisine,  Delivered</h1>
     <!--menu.......convert to links to take to new section of page-->
     <h2>Starters Mains Desserts Beverages</h2>
     <!--end menu-->
-    <h3>Starters</h3>
-    <h4>Garlic Bread $55.99</h4>
-    <p>(Fake Content) Our top-seller.</p>
-    <!--quantity box and add to cart button-->
-    
-<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+    <!--end code for an item -->
+    <h2>Starters</h2>
+    Arabian
+    EXAMPLE
+    <h4>item name goes here</h4>
+    EXAMPLE  picture goes here 300 x 300 min
+    EXAMPLE
+    <p>description goes here</p>
+    <h3>Asian</h3>
+    <h4>Fried Mandoo $7 per Serve</h4>
+    <img src="STARTER_ASIAN.png"  height="150" width="200" class="thumbnail"/>
+    <p>Korean Style Fried Crispy Dumpling with dipping sauce<br>
+      Please indicate us if you are Vegetarian or Vegan otherwise choice 1 will be served.<br>
+      Choice 1: fillings of pork mince, mushrooms and vegetables<br>
+      Choice 2: fillings of Tofu, mushroom and vegetables for Vegetarian or vegan <br>
+    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
       <input type="hidden" name="cmd" value="_cart">
       <input type="hidden" name="business" value="orders@primafood.com.au">
       <input type="hidden" name="lc" value="AU">
-      <input type="hidden" name="item_name" value="Garlic Bread">
-      <input type="hidden" name="item_number" value="GB1">
-      <input type="hidden" name="amount" value="55.50">
+      <input type="hidden" name="item_name" value="Korean Style Crispy Dumpling">
+      <input type="hidden" name="item_number" value="STARTER_ASIAN">
+      <input type="hidden" name="amount" value="7.00">
       <input type="hidden" name="currency_code" value="AUD">
       <input type="hidden" name="button_subtype" value="products">
       <input type="hidden" name="no_note" value="1">
@@ -66,13 +112,156 @@ body {
       <input type="hidden" name="shopping_url" value="https://primacode.github.io/assessment3/indexxx.html">
       <input type="hidden" name="add" value="1">
       <input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHosted">
+      <label for="quantity">Quantity:</label>
+      <input type="text" name="quantity" size="5" value="1">
+      <input type="submit" value="Add to cart" >
+    </form>
+
+    </p>
+    <!--end qty box and add to cart button-->
+    <p>Australian
+      EXAMPLE </p>
+    <h4>item name goes here</h4>
+    EXAMPLE  picture goes here 300 x 300 min
+    EXAMPLE
+    <p>description goes here</p>
+    MAINS MENU
     
+    Arabian
+    EXAMPLE
+    <h4>item name goes here</h4>
+    EXAMPLE  picture goes here 300 x 300 min
+    EXAMPLE
+    <p>description goes here</p>
+    
+    Asian
+    <h4>Bibimbab $15 per serve</h4>
+    <img src="MAIN_ASIAN.png"  height="150" width="200" class="thumbnail" style=""/>
+    <p>Served as a bowl of warm white steamed rice topped with seasoned vegetables, beef mince(optional), egg(optional) and chilli pepper paste. The hot dish is stirred together thoroughly just before eating. Free side dishes of Kimchi and Miso Soup are served.<br>
+      <br>
+      Please indicate us if you are Vegetarian or vegan otherwise Choice 1 will be served. Choice 2 & 3 will be served with additional seasoned mushrooms and fried/seasoned tofu.<br>
+      <br>
+      Choice 1: white steamed rice, seasoned vegetables, beef mince, egg and chilli pepper paste<br>
+      Choice 2(Vegetarian): white steamed rice, seasoned vegetables, egg and chilli pepper paste.<br>
+      Choice 3(Vegan): white steamed rice, seasoned vegetables and chilli pepper  paste.</p>
+    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+      <input type="hidden" name="cmd" value="_cart">
+      <input type="hidden" name="business" value="orders@primafood.com.au">
+      <input type="hidden" name="lc" value="AU">
+      <input type="hidden" name="item_name" value="Korean Style Crispy Dumpling">
+      <input type="hidden" name="item_number" value="STARTER_ASIAN">
+      <input type="hidden" name="amount" value="7.00">
+      <input type="hidden" name="currency_code" value="AUD">
+      <input type="hidden" name="button_subtype" value="products">
+      <input type="hidden" name="no_note" value="1">
+      <input type="hidden" name="no_shipping" value="2">
+      <input type="hidden" name="rm" value="1">
+      <input type="hidden" name="return" value="https://primacode.github.io/assessment3/indexxx.html">
+      <input type="hidden" name="cancel_return" value="https://primacode.github.io/assessment3/indexxx.html">
+      <input type="hidden" name="shopping_url" value="https://primacode.github.io/assessment3/indexxx.html">
+      <input type="hidden" name="add" value="1">
+      <input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHosted">
       <label for="quantity">Quantity:</label>
       <input type="text" name="quantity" size="5" value="1">
       <input type="submit" value="Add to cart" >
     </form>
     
-    <!--end qty box and add to cart button-->
+    Australian
+    EXAMPLE
+    <h4>item name goes here</h4>
+    EXAMPLE  picture goes here 300 x 300 min
+    EXAMPLE
+    <p>description goes here</p>
+    <h2>DESSERTS MENU</h2>
+      
+      <h4>Arabian<h4>
+      EXAMPLE
+    <h4>item name goes here</h4>
+    EXAMPLE  picture goes here 300 x 300 min
+    EXAMPLE
+    <p>description goes here</p>
+    
+    <h4>GoGooMa Mattang $7 for 2 serves</h4>
+    <img src="DESSERT_ASIAN.png"  height="150" width="200" class="thumbnail"/>
+    <p> Baked sweet potato with Honey Coating<br>
+      <br>
+        <br>
+        <br>
+      <br>
+    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+      <input type="hidden" name="cmd" value="_cart">
+      <input type="hidden" name="business" value="orders@primafood.com.au">
+      <input type="hidden" name="lc" value="AU">
+      <input type="hidden" name="item_name" value="Korean Style Crispy Dumpling">
+      <input type="hidden" name="item_number" value="STARTER_ASIAN">
+      <input type="hidden" name="amount" value="7.00">
+      <input type="hidden" name="currency_code" value="AUD">
+      <input type="hidden" name="button_subtype" value="products">
+      <input type="hidden" name="no_note" value="1">
+      <input type="hidden" name="no_shipping" value="2">
+      <input type="hidden" name="rm" value="1">
+      <input type="hidden" name="return" value="https://primacode.github.io/assessment3/indexxx.html">
+      <input type="hidden" name="cancel_return" value="https://primacode.github.io/assessment3/indexxx.html">
+      <input type="hidden" name="shopping_url" value="https://primacode.github.io/assessment3/indexxx.html">
+      <input type="hidden" name="add" value="1">
+      <input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHosted">
+      <label for="quantity">Quantity:</label>
+      <input type="text" name="quantity" size="5" value="1">
+      <input type="submit" value="Add to cart" >
+      <br>
+      <br>
+    </form>
+    Australian
+    EXAMPLE
+    <h4>item name goes here</h4>
+    EXAMPLE  picture goes here 300 x 300 min
+    EXAMPLE
+    <p>description goes here</p>
+    <h3>BEVERAGES MENU<br>
+      <br>
+    
+    Arabian
+    EXAMPLE
+    </h3>
+    <h4>item name goes here</h4>
+    EXAMPLE  picture goes here 300 x 300 min
+    EXAMPLE
+    <p>description goes here</p>
+    
+    <h4>Hitejinro Chamisul Soju 360mL $20 for a bottle</h4>
+    <img src="BEVERAGE_ASIAN.png"  height="150" width="200" class="thumbnail"/>
+    <p>BYO is welcome but Soju is served alternatively.<br>
+      Soju is a clear, colorless distilled beverage of Korean origin. It is usually consumed neat, and its alcohol content  is 16.8%. Made in South Korea.<BR>
+      Chamisul Fresh is Korea’s No. 1 soju brand. With a 7-step refinement process using active bamboo charcoal, the substance that causes hangovers is removed so only the fresh, clean finish remains. Feel clear-headed and ready for action when you wake up. Chamisul Fresh uses only clean vegetable additives such as Finnish fruit sugar, known as a “healthy sugar,” and Tomatin, a protein sweetener extracted from the black seeds of katemfe grown in West Africa.</p>
+    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+      <input type="hidden" name="cmd" value="_cart">
+      <input type="hidden" name="business" value="orders@primafood.com.au">
+      <input type="hidden" name="lc" value="AU">
+      <input type="hidden" name="item_name" value="Korean Style Crispy Dumpling">
+      <input type="hidden" name="item_number" value="STARTER_ASIAN">
+      <input type="hidden" name="amount" value="7.00">
+      <input type="hidden" name="currency_code" value="AUD">
+      <input type="hidden" name="button_subtype" value="products">
+      <input type="hidden" name="no_note" value="1">
+      <input type="hidden" name="no_shipping" value="2">
+      <input type="hidden" name="rm" value="1">
+      <input type="hidden" name="return" value="https://primacode.github.io/assessment3/indexxx.html">
+      <input type="hidden" name="cancel_return" value="https://primacode.github.io/assessment3/indexxx.html">
+      <input type="hidden" name="shopping_url" value="https://primacode.github.io/assessment3/indexxx.html">
+      <input type="hidden" name="add" value="1">
+      <input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHosted">
+      <label for="quantity">Quantity:</label>
+      <input type="text" name="quantity" size="5" value="1">
+      <input type="submit" value="Add to cart" >
+    </form>
+    <br>
+    
+    Australian
+    EXAMPLE
+    <h4>item name goes here</h4>
+    EXAMPLE  picture goes here 300 x 300 min
+    EXAMPLE
+    <p>description goes here</p>
     <!-- end #mainContent -->
   </div>
   <!-- end #container -->
