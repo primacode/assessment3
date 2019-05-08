@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-	<html>
+<html>
 	<head>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -83,13 +83,13 @@
 		margin-bottom: 40px;
 	}
 	.thumbnail {
-		float: right;
-		background-color: #99CC66;
-		padding: 10px;
-		height: 100px;
-		width: 133px;
-		margin: 10px;
-		border: 1px solid black;
+	float: right;
+	background-color: #99CC66;
+	padding: 10px;
+	height: 180px;
+	width: 300px;
+	margin: 10px;
+	border: 1px solid black;
 	}
 	.thumbnail:hover {
 		position:relative;
@@ -102,12 +102,17 @@
 		left: 0px;
 	}
 	body {
-		font: 100% Verdana, Arial, Helvetica, sans-serif;
-		background: #996666;
-		margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
-		padding: 0;
-		text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
-		color: #000000;
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	background: #996666;
+	margin: 0; /* it's good practice to zero the
+ margin and padding of the body element to account for differing browser
+ defaults */
+	padding: 0;
+	text-align: center; /* this centers the 
+container in IE 5* browsers. The text is then set to the left aligned 
+default in the #container selector */
+	color: #000000;
+	background-image: url(strip.jpg);
 	}
 	.oneColFixCtr #container {
 		width: 950px;  /* using 20px less than a full 970px width allows for browser chrome and avoids a horizontal scroll bar */
@@ -142,7 +147,7 @@
 	        <input type="hidden" name="cmd" value="_cart">
 	        <input type="hidden" name="business" value="orders@primafood.com.au">
 	        <input type="hidden" name="display" value="1">
-	        <input style="margin-left:30px; margin-top:2px;" type="image" src="https://www.paypalobjects.com/en_AU/i/btn/btn_viewcart_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+	        <input style="margin-left:30px; margin-top:2px;" type="image" src="https://www.paypalobjects.com/en_AU/i/btn/btn_viewcart_LG.gif" border="0" name="submit" alt="PayPal  The safer, easier way to pay online!">
 	        <img alt="" border="0" src="https://www.paypalobjects.com/en_AU/i/scr/pixel.gif" width="1" height="1">
 	      <input type="hidden" name="return" value="https://primacode.github.io/assessment3/indexxx.html">
 	      <input type="hidden" name="cancel_return" value="https://primacode.github.io/assessment3/indexxx.html">
@@ -151,19 +156,52 @@
 	    </div>
 	    <!--end view cart btn-->
 	    <div class="menuheader"><a name="s"></a><img src="starters_sml.jpg" ><a class="top" href="#top">Top</a></div>
-	    <h4>Kebab mixed with vegetables$5</h4>
+	    <h4>Kebab with vegetables $8.50</h4>
 	    <img src="Kebab.jpg"  height="150" width="200" class="thumbnail"/>
 	    
-		 <p>  Fried Kebab mixed with vegetables i<br>
-		  Made from mines meat, vegetables ,chilli and garlic 
-		Server with your choices of salad  <br>
+	    <p>  Fried kebab, mixed with vegetables<br>
+		  Made from mincemeat, vegetables, chilli and garlic.<br> 
+		Served with your choice of salad.<br>
+		Serves 2 people.<br>
+	      <br>
 	      <br>
 	      <br>
 		</p>
+        	    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+	      <input type="hidden" name="cmd" value="_cart">
+	      <input type="hidden" name="business" value="orders@primafood.com.au">
+	      <input type="hidden" name="lc" value="AU">
+	      <input type="hidden" name="item_name" value="Kebabs with vegetables">
+	      <input type="hidden" name="item_number" value="STARTER_ARABIC">
+	      <input type="hidden" name="amount" value="8.50">
+	      <input type="hidden" name="currency_code" value="AUD">
+	      <input type="hidden" name="button_subtype" value="products">
+	      <input type="hidden" name="no_note" value="1">
+	      <input type="hidden" name="no_shipping" value="2">
+	      <input type="hidden" name="rm" value="1">
+	      <input type="hidden" name="return" value="https://primacode.github.io/assessment3/indexxx.html">
+	      <input type="hidden" name="cancel_return" value="https://primacode.github.io/assessment3/indexxx.html">
+	      <input type="hidden" name="shopping_url" value="https://primacode.github.io/assessment3/indexxx.html">
+	      <input type="hidden" name="add" value="1">
+	      <input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHosted">
+	      <label for="quantity">Quantity:</label>
+	      <input type="text" name="quantity" size="5" value="1">
+	      <input class="addbtn" type="image" src="https://www.paypalobjects.com/en_AU/i/btn/btn_cart_SM.gif" border="0" 
+	
 
-	    <h4>Fried Mandoo $7 per Serve</h4>
+	name="submit" alt="PayPal  The safer, easier way to pay online!">
+	      <img alt="" border="0" src="https://www.paypalobjects.com/en_AU/i/scr/pixel.gif" width="1" 
+	
+
+	height="1">
+	    </form>
+
+	    <h4>Fried Mandoo $7.00 per serve</h4>
 	    <img src="STARTER_ASIAN.png"  height="150" width="200" class="thumbnail"/>
-	    <p>Korean Style Fried Crispy Dumpling with dipping sauce<br>
+	    <p>Korean Style Fried Crispy Dumpling with dipping sauce.<br>
+	      Serves 2 people.<br>
+	      <br>
+	      <br>
 	      <br>
 	      <br>
 	      <br>
@@ -190,17 +228,19 @@
 	      <input class="addbtn" type="image" src="https://www.paypalobjects.com/en_AU/i/btn/btn_cart_SM.gif" border="0" 
 	
 
-	name="submit" alt="PayPal – The safer, easier way to pay online!">
+	name="submit" alt="PayPal  The safer, easier way to pay online!">
 	      <img alt="" border="0" src="https://www.paypalobjects.com/en_AU/i/scr/pixel.gif" width="1" 
 	
 
 	height="1">
 	    </form>
 	    <!--end qty box and add to cart button-->
-	    <h4>Spicy sausage rolls with tomato sauce $6 per serve</h4>
+	    <h4>Spicy sausage rolls with tomato sauce $6.00 per serve</h4>
 	    <img src="STARTER_AUSSIE.jpg"  height="150" width="200" class="thumbnail"/>
 	    <p>Gourmet sausage rolls filled with tender beef sausage, spiced with Hungarian red pepper.<br>
 	      Serves 2 people.<br>
+	      <br>
+	      <br>
 	      <br>
 	      <br>
 	    </p>
@@ -226,7 +266,7 @@
 	      <input class="addbtn" type="image" src="https://www.paypalobjects.com/en_AU/i/btn/btn_cart_SM.gif" border="0" 
 	
 
-	name="submit" alt="PayPal – The safer, easier way to pay online!">
+	name="submit" alt="PayPal  The safer, easier way to pay online!">
 	      <img alt="" border="0" src="https://www.paypalobjects.com/en_AU/i/scr/pixel.gif" width="1" 
 	
 
@@ -235,18 +275,55 @@
 
 	    </form>
 	    <div class="menuheader"><a name="m"></a><img src="mains_sml.jpg" width="102" height="38"> <a class="top" href="#top">Top</a></div>
-	    <h3> Rise with goat meat $23</h3>
+	    <h4> Goat meat with rice $23.00</h4>
 	    <img src="ricewithmeat.jpg" height="150" width="200" class="thumbnail" style=""/>
 	
-	    <p>non vegan: basmati rice with primam coat meat<br>
-Served with fresh vegetables on top , chilli on side
- <br>
+	    <p>Non vegan. Basmati rice with premium goat meat.<br>
+Served with fresh vegetables on top, chilli on the side.<br>
+Add your choice of salad. <br>
+Serves 4 people.
 	      <br>
-	      <br> and your choice of salad</p>
+	      <br>
+	      <br>
+	      <br>
+	    </p>
+	    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+	      <input type="hidden" name="cmd" value="_cart">
+	      <input type="hidden" name="business" value="orders@primafood.com.au">
+	      <input type="hidden" name="lc" value="AU">
+	      <input type="hidden" name="item_name" value="Goat meat with rice">
+	      <input type="hidden" name="item_number" value="STARTER_ARABIAN">
+	      <input type="hidden" name="amount" value="23.00">
+	      <input type="hidden" name="currency_code" value="AUD">
+	      <input type="hidden" name="button_subtype" value="products">
+	      <input type="hidden" name="no_note" value="1">
+	      <input type="hidden" name="no_shipping" value="2">
+	      <input type="hidden" name="rm" value="1">
+	      <input type="hidden" name="return" value="https://primacode.github.io/assessment3/indexxx.html">
+	      <input type="hidden" name="cancel_return" value="https://primacode.github.io/assessment3/indexxx.html">
+	      <input type="hidden" name="shopping_url" value="https://primacode.github.io/assessment3/indexxx.html">
+	      <input type="hidden" name="add" value="1">
+	      <input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHosted">
+	      <label for="quantity">Quantity:</label>
+	      <input type="text" name="quantity" size="5" value="1">
+	      <input class="addbtn" type="image" src="https://www.paypalobjects.com/en_AU/i/btn/btn_cart_SM.gif" border="0" 
+	
 
+	name="submit" alt="PayPal  The safer, easier way to pay online!">
+	      <img alt="" border="0" src="https://www.paypalobjects.com/en_AU/i/scr/pixel.gif" width="1" 
+	
+
+	height="1">
+	    </form>
 	    <h4>Asian Bibimbab $15 </h4>
 	    <img src="MAIN_ASIAN.png"  height="150" width="200" class="thumbnail" style=""/>
-	    <p>Served as a bowl of warm white steamed rice topped with seasoned vegetables, beef mince(optional), egg(optional) and chilli pepper paste. The hot dish is stirred together thoroughly just before eating. Free side dishes of Kimchi and Miso Soup are served.<br>
+	    <p>Served
+ as a bowl of warm white steamed rice topped with seasoned vegetables, 
+beef mince(optional), egg (optional) and chilli pepper paste. The hot 
+dish is stirred together thoroughly just before eating. Free side dishes
+ of Kimchi and Miso Soup are served.<br>
+	      <br>
+	      <br>
 	      <br>
 	    </p>
 	    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
@@ -271,7 +348,7 @@ Served with fresh vegetables on top , chilli on side
 	      <input class="addbtn" type="image" src="https://www.paypalobjects.com/en_AU/i/btn/btn_cart_SM.gif" border="0" 
 	
 
-	name="submit" alt="PayPal – The safer, easier way to pay online!">
+	name="submit" alt="PayPal  The safer, easier way to pay online!">
 	      <img alt="" border="0" src="https://www.paypalobjects.com/en_AU/i/scr/pixel.gif" width="1" 
 	
 
@@ -283,7 +360,12 @@ Served with fresh vegetables on top , chilli on side
 	    <br>
 	    <h4>Hot Chicken Pie with a small Greek side salad $10:50</h4>
 	    <img src="MAIN_AUSSIE.jpg"  height="150" width="200" class="thumbnail"/>
-	    <p>A generous slice of oven-baked chicken pie, served with generous portions of fetta cheese, baby ripe red tomatoes, black olives, rocket lettuce and sliced cucumber, all in a classic Greek dressing.<br>
+	    <p>A
+ generous slice of oven-baked chicken pie, served with generous portions
+ of fetta cheese, baby ripe red tomatoes, black olives, rocket lettuce 
+and sliced cucumber, all in a classic Greek dressing.<br>
+	      <br>
+	      <br>
 	      <br>
 	      <br>
 	    </p>
@@ -309,7 +391,7 @@ Served with fresh vegetables on top , chilli on side
 	      <input class="addbtn" type="image" src="https://www.paypalobjects.com/en_AU/i/btn/btn_cart_SM.gif" border="0" 
 	
 
-	name="submit" alt="PayPal – The safer, easier way to pay online!">
+	name="submit" alt="PayPal  The safer, easier way to pay online!">
 	      <img alt="" border="0" src="https://www.paypalobjects.com/en_AU/i/scr/pixel.gif" width="1" 
 	
 
@@ -318,18 +400,50 @@ Served with fresh vegetables on top , chilli on side
 
 	    </form>
 	    <div class="menuheader"><a name="d"></a><img src="desserts_sml.jpg" width="144" height="32"><a class="top" href="#top">Top</a></div>
-	    <h4><h4>Injera  with honey $13</h4>
+	    <h4>Injera  with honey $13.00</h4>
 	    <img src="canjaraa.jpg"  height="150" width="200" class="thumbnail"/>
 	    
-	    <p>light injera made from wheat, barley, millet, corn,  rice flour<b>
-Served with honey or custard sugar and sesame oil <br>
+	    <p>Light injera. Made from wheat, barley, millet, corn and rice flour.<br>
+Served with honey or custard sugar and sesame oil.<br>
 	      <br>
 	      <br>
 	      <br>
-</p>
+	      <br>
+	      <br>
+</p>	    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+	      <input type="hidden" name="cmd" value="_cart">
+	      <input type="hidden" name="business" value="orders@primafood.com.au">
+	      <input type="hidden" name="lc" value="AU">
+	      <input type="hidden" name="item_name" value="Injira with honey">
+	      <input type="hidden" name="item_number" value="STARTER_ASIAN">
+	      <input type="hidden" name="amount" value="13.00">
+	      <input type="hidden" name="currency_code" value="AUD">
+	      <input type="hidden" name="button_subtype" value="products">
+	      <input type="hidden" name="no_note" value="1">
+	      <input type="hidden" name="no_shipping" value="2">
+	      <input type="hidden" name="rm" value="1">
+	      <input type="hidden" name="return" value="https://primacode.github.io/assessment3/indexxx.html">
+	      <input type="hidden" name="cancel_return" value="https://primacode.github.io/assessment3/indexxx.html">
+	      <input type="hidden" name="shopping_url" value="https://primacode.github.io/assessment3/indexxx.html">
+	      <input type="hidden" name="add" value="1">
+	      <input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHosted">
+	      <label for="quantity">Quantity:</label>
+	      <input type="text" name="quantity" size="5" value="1">
+	      <input class="addbtn" type="image" src="https://www.paypalobjects.com/en_AU/i/btn/btn_cart_SM.gif" border="0" 
+	
+
+	name="submit" alt="PayPal  The safer, easier way to pay online!">
+	      <img alt="" border="0" src="https://www.paypalobjects.com/en_AU/i/scr/pixel.gif" width="1" 
+	
+
+	height="1">
+	    </form>
 	    <h4>Asian GoGooMa Mattang $5 per serve</h4>
 	    <img src="DESSERT_ASIAN.png"  height="150" width="200" class="thumbnail"/>
-	    <p> Baked sweet potato with Honey Coating<br>
+	    <p> Baked sweet potato with Honey Coating.<br>
+	      <br>
+	      <br>
+	      <br>
 	      <br>
 	      <br>
 	      <br>
@@ -356,7 +470,7 @@ Served with honey or custard sugar and sesame oil <br>
 	      <input class="addbtn" type="image" src="https://www.paypalobjects.com/en_AU/i/btn/btn_cart_SM.gif" border="0" 
 	
 
-	name="submit" alt="PayPal – The safer, easier way to pay online!">
+	name="submit" alt="PayPal  The safer, easier way to pay online!">
 	      <img alt="" border="0" src="https://www.paypalobjects.com/en_AU/i/scr/pixel.gif" width="1" 
 	
 
@@ -366,7 +480,12 @@ Served with honey or custard sugar and sesame oil <br>
 	    </form>
 	    <h4>Aussie Chocolate Volcano Cake $7 each</h4>
 	    <img src="DESSERT_AUSSIE.jpg"  height="150" width="200" class="thumbnail"/>
-	    <p> Glorious oven-baked chocolate desssert cake, filled with piping hot chocolate sauce. Served with a generous amout of cinnamon-flavoured cream and raspberries.<br>
+	    <p>
+ Glorious oven-baked chocolate desssert cake, filled with piping hot 
+chocolate sauce. Served with a generous amout of cinnamon-flavoured 
+cream and raspberries.<br>
+	      <br>
+	      <br>
 	      <br>
 	      <br>
 	    </p>
@@ -392,7 +511,7 @@ Served with honey or custard sugar and sesame oil <br>
 	      <input class="addbtn" type="image" src="https://www.paypalobjects.com/en_AU/i/btn/btn_cart_SM.gif" border="0" 
 	
 
-	name="submit" alt="PayPal – The safer, easier way to pay online!">
+	name="submit" alt="PayPal  The safer, easier way to pay online!">
 	      <img alt="" border="0" src="https://www.paypalobjects.com/en_AU/i/scr/pixel.gif" width="1" 
 	
 
@@ -402,25 +521,63 @@ Served with honey or custard sugar and sesame oil <br>
 	      <br>
 	    </form>
 	    <div class="menuheader"><a name="b"></a><img src="beverages_sml.jpg" width="174" height="38"><a class="top" href="#top">Top</a></div>
-	    <h4> African</h4>
-	    <h3> <h4>fresh grounded coffee bean served with corn $4 </h3>
+	    <h4>Fresh-ground coffee served with corn $4.00 </h4>
 	    <img src="coffe.jpg"  height="150" width="200" class="thumbnail"/>
-	<p>coffee beans from Ethiopian coffee grounded <b>
-	And served with or without sugar and corn <br>
-		<br>
-	      <br>
+	<p>Coffee made from ground Ethiopian coffee beans.<br>
+	  Served with or without sugar and corn.<br>
+	  <br>
+	  <br>
+	  <br>
+	  <br>
 	      <br>
 	 </p>
 	
+		    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+	      <input type="hidden" name="cmd" value="_cart">
+	      <input type="hidden" name="business" value="orders@primafood.com.au">
+	      <input type="hidden" name="lc" value="AU">
+	      <input type="hidden" name="item_name" value="Ethiopian Coffee (per cup)">
+	      <input type="hidden" name="item_number" value="BEVERAGE_ARABIC">
+	      <input type="hidden" name="amount" value="4.00">
+	      <input type="hidden" name="currency_code" value="AUD">
+	      <input type="hidden" name="button_subtype" value="products">
+	      <input type="hidden" name="no_note" value="1">
+	      <input type="hidden" name="no_shipping" value="2">
+	      <input type="hidden" name="rm" value="1">
+	      <input type="hidden" name="return" value="https://primacode.github.io/assessment3/indexxx.html">
+	      <input type="hidden" name="cancel_return" value="https://primacode.github.io/assessment3/indexxx.html">
+	      <input type="hidden" name="shopping_url" value="https://primacode.github.io/assessment3/indexxx.html">
+	      <input type="hidden" name="add" value="1">
+	      <input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHosted">
+	      <label for="quantity">Quantity:</label>
+	      <input type="text" name="quantity" size="5" value="1">
+	      <input class="addbtn" type="image" src="https://www.paypalobjects.com/en_AU/i/btn/btn_cart_SM.gif" border="0" 
 	
+
+	name="submit" alt="PayPal  The safer, easier way to pay online!">
+	      <img alt="" border="0" src="https://www.paypalobjects.com/en_AU/i/scr/pixel.gif" width="1" 
+	
+
+	height="1">
+	    </form>
 
 	    <h4>Hitejinro Chamisul Soju 360mL $20 for a bottle</h4>
 	    <img src="BEVERAGE_ASIAN.png"  height="150" width="200" class="thumbnail"/>
-	    <p> Soju is a clear, colorless distilled beverage of Korean origin. It is usually consumed neat, and its alcohol content  is 16.8%. Made in South Korea.<br>
+	    <p>
+ Soju is a clear, colorless distilled beverage of Korean origin. It is 
+usually consumed neat, and its alcohol content  is 16.8%. Made in South 
+Korea.<br>
 	      <BR>
-	      Chamisul Fresh is Korea’s No. 1 soju brand. With a 7-step refinement process using active bamboo charcoal, the substance that causes hangovers is removed so only the fresh, clean finish remains.<br>
+	      Chamisul Fresh is Koreas No. 1 soju 
+brand. With a 7-step refinement process using active bamboo charcoal, 
+the substance that causes hangovers is removed so only the fresh, clean 
+finish remains.<br>
 	      <br>
-	      Feel clear-headed and ready for action when you wake up. Chamisul Fresh uses only clean vegetable additives such as Finnish fruit sugar, known as a “healthy sugar,” and Tomatin, a protein sweetener extracted from the black seeds of katemfe grown in West Africa.</p>
+	      Feel clear-headed and ready for action 
+when you wake up. Chamisul Fresh uses only clean vegetable additives 
+such as Finnish fruit sugar, known as a healthy sugar, and Tomatin, a 
+protein sweetener extracted from the black seeds of katemfe grown in 
+West Africa.</p>
 	    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
 	      <input type="hidden" name="cmd" value="_cart">
 	      <input type="hidden" name="business" value="orders@primafood.com.au">
@@ -455,6 +612,9 @@ Served with honey or custard sugar and sesame oil <br>
 	      Original Coke, orange Fanta, Sprite Lemonade, Coke Zero<br>
 	      <br>
 	      <br>
+	      <br>
+	      <br>
+	      <br>
 	    </p>
 	    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
 	      <input type="hidden" name="cmd" value="_cart">
@@ -478,7 +638,7 @@ Served with honey or custard sugar and sesame oil <br>
 	      <input class="addbtn" type="image" src="https://www.paypalobjects.com/en_AU/i/btn/btn_cart_SM.gif" border="0" 
 	
 
-	name="submit" alt="PayPal – The safer, easier way to pay online!">
+	name="submit" alt="PayPal  The safer, easier way to pay online!">
 	      <img alt="" border="0" src="https://www.paypalobjects.com/en_AU/i/scr/pixel.gif" width="1" 
 	
 
@@ -509,7 +669,7 @@ Served with honey or custard sugar and sesame oil <br>
 	      <input class="addbtn" type="image" src="https://www.paypalobjects.com/en_AU/i/btn/btn_cart_SM.gif" border="0" 
 	
 
-	name="submit" alt="PayPal – The safer, easier way to pay online!">
+	name="submit" alt="PayPal  The safer, easier way to pay online!">
 	      <img alt="" border="0" src="https://www.paypalobjects.com/en_AU/i/scr/pixel.gif" width="1" 
 	
 
@@ -540,7 +700,7 @@ Served with honey or custard sugar and sesame oil <br>
 	      <input class="addbtn" type="image" src="https://www.paypalobjects.com/en_AU/i/btn/btn_cart_SM.gif" border="0" 
 	
 
-	name="submit" alt="PayPal – The safer, easier way to pay online!">
+	name="submit" alt="PayPal  The safer, easier way to pay online!">
 	      <img alt="" border="0" src="https://www.paypalobjects.com/en_AU/i/scr/pixel.gif" width="1" 
 	
 
@@ -571,7 +731,7 @@ Served with honey or custard sugar and sesame oil <br>
 	      <input  class="addbtn" type="image" src="https://www.paypalobjects.com/en_AU/i/btn/btn_cart_SM.gif" border="0" 
 	
 
-	name="submit" alt="PayPal – The safer, easier way to pay online!">
+	name="submit" alt="PayPal  The safer, easier way to pay online!">
 	      <img alt="" border="0" src="https://www.paypalobjects.com/en_AU/i/scr/pixel.gif" width="1" 
 	
 
@@ -595,4 +755,6 @@ Served with honey or custard sugar and sesame oil <br>
 	</div>
 	</body>
 	</html>
+
+
 
